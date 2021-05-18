@@ -15,3 +15,8 @@
   padding: 10px;
   border-bottom: 1px solid lightgrey;
 }
+@media (max-width: 768px) {
+  .checkout {
+    flex-flow: row wrap;
+  }
+}

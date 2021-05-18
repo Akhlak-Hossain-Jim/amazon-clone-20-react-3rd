@@ -6,10 +6,34 @@
   max-width: 1500px;
 }
 
+.home::before {
+  content: "";
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/HolidayDeals/Desktop/Fuji_TallHero_HolidayDeals_en_US_1x._CB414278668_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
 .home__row {
   display: flex;
   z-index: 1;
   margin: 0 5px !important;
+}
+@media (max-width: 548px) {
+  .home__row {
+    flex-wrap: wrap;
+  }
+}
+
+.home .home__container {
+  margin-top: 20vh;
 }
 
 .home__image {

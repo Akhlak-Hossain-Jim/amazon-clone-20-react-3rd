@@ -72,3 +72,15 @@
 .header__basketCount {
   margin: 0 10px 0 10px;
 }
+
+@media (max-width: 548px) {
+  .header .header__location {
+    display: none;
+  }
+  .header .header__option {
+    display: none;
+  }
+  .header__optionBasket {
+    margin: 0 10px 0 10px;
+  }
+}
